@@ -1,0 +1,15 @@
+if (count < 102):
+        count += 1
+    else:
+        vid_src = link['href']
+        new_link = exact_link(vid_src)
+        video = pytube.YouTube(new_link)
+        print("Iniciando descarga en el video " + str(count))
+        print("Descargando: " + video.title)
+        video.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download()
+
+        https://www.youtube.com/playlist?list=PLE8uP447fYpgOwKgbypiCGSz7veY2MLGb
+        https://www.youtube.com/playlist?list=PLcB9ncCQty6l32vvc5z8da6PM_pX5M9Ql
+
+        https://www.youtube.com/playlist?list=PLJjOveEiVE4Dk48EI7I-67PEleEC5nxc3
+
