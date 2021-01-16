@@ -1,4 +1,14 @@
 # Importing libraries
+#Programa para descargar
+# de youtube una lista de
+# reproducción completa
+
+#Para evitar errores en la compilación se necesita
+#pip uninstall PyQt5
+#pip uninstall PyQt5-sip
+#pip uninstall PyQtWebEngine
+
+
 import bs4 as bs
 import sys
 import threading
